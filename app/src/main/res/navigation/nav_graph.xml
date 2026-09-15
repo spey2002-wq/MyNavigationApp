@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jeiu.MyNavigationAPP.HomeFragment"
+        android:label="HOME"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.jeiu.MyNavigationAPP.MenuFragment"
+        android:label="MENU"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_detailFragment"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="subject"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.jeiu.MyNavigationAPP.DetailFragment"
+        android:label="DETAIL"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="subject"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

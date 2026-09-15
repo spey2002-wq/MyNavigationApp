@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyNavigationApp</string>
+    <string name="home_title">HOME</string>
+    <string name="home_subtitle">Navigation 실습 앱입니다.</string>
+    <string name="go_to_menu">메뉴 보기</string>
+    <string name="menu_title">MENU</string>
+    <string name="menu_subtitle">원하는 항목을 선택하세요.</string>
+    <string name="android">Android</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="back_to_home">HOME으로 돌아가기</string>
+    <string name="detail_title">DETAIL</string>
+    <string name="selected_item">선택한 항목: %1$s</string>
+    <string name="previous_screen">이전 화면</string>
+</resources>
